@@ -17,14 +17,14 @@ For the genetic programming system, an “individual” is just a tuple (w1,...,
 ### Fitness function
 The fitness function is the sum of squared errors where fitness∈[0,M]. The “individual” which has less value of fitness is fitter.
 
-### copy operator
+### Copy operator
 Copy 10% of the programs from generation n to generation n+1. These individuals are chosen by the following tournament selection process: 10 individuals are randomly selected from the generation n, and the most fit of these ten is chosen.
 
-### crossover operator
+### Crossover operator
 The 89% are produced by generation n by a crossover operation as follows: select a mother and a father from generation n by the tournament selection process, and interchange w_j of the father with w_j of the mother by randomly choosing j,j∈[0,n],j∈Z^+ .
 
-### mutation operator
+### Mutation operator
 The 1% are produced by generation n by a mutation operation as follows: select a member from generation n by the tournament selection process, and then a randomly chosen w_j of the member is deleted and replaced by a random number.
 
-### iteration criterial
+### Iteration criterial
 When there is at least one indiviudal whose fitness function’s value is equal to 0, I would stop the evolution.
